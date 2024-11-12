@@ -1,0 +1,17 @@
+
+body{
+    margin:0 0 0 0;
+}
+
+.dark_blue{
+    background-color: #3c5a5b;
+}
+
+.container{
+    display:flex;
+}
+
+#pic1{
+    max-height: 150px;
+    max-width: auto;
+}
