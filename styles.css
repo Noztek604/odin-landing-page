@@ -7,11 +7,72 @@ body{
     background-color: #3c5a5b;
 }
 
+.dark_grey{
+    background-color: #c3cfcf;
+}
+
 .container{
     display:flex;
+    padding: 4rem;
+}
+
+.quote{
+    min-width: 40rem;
+    padding: 0 25%;
+
 }
 
 #pic1{
     max-height: 150px;
     max-width: auto;
 }
+
+#logo{
+    max-width: 5rem;
+}
+
+.container.menu_top{
+    justify-content: space-between;
+    align-items: center;
+    padding-top:0%;
+}
+
+div.container > a{
+    padding: 1rem 1rem;
+}
+
+
+.sq_radius{
+    width:21%;
+    min-width:200px;
+    aspect-ratio: 1/1;
+    border-radius:2rem;
+    object-fit: cover;
+}
+
+#rad1 {
+    width:auto;
+    gap:1rem;
+    justify-content: space-evenly;
+}
+
+#header{
+    display:block;
+    position: relative;
+}
+
+#header >h1 {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    margin:0;
+    white-space: nowrap;
+}
+
+footer {
+    display:flex;
+    justify-content: center;
+    
+}
+
