@@ -1,6 +1,15 @@
 
+html{
+ font-family:"Roboto", sans-serif;   
+}
+
 body{
     margin:0 0 0 0;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
 }
 
 .dark_blue{
@@ -11,9 +20,14 @@ body{
     background-color: #c3cfcf;
 }
 
+.light {
+    background-color: #dddddd;
+}
+
 .container{
     display:flex;
-    padding: 4rem;
+    padding:1rem 10rem;
+    justify-content: center;
 }
 
 .quote{
@@ -22,25 +36,56 @@ body{
 
 }
 
+#c1{
+    align-items: stretch;
+}
+
+#t1{
+    flex:1;
+    min-width: 25rem;
+}
+
 #pic1{
-    max-height: 150px;
-    max-width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 350px;
+    object-fit: cover;
 }
 
 #logo{
     max-width: 5rem;
+    transition: transform 0.5s ease;
+}
+
+#logo:hover{
+    transform: rotate(75deg);
 }
 
 .container.menu_top{
     justify-content: space-between;
     align-items: center;
-    padding-top:0%;
+    padding-top:1%;
 }
 
 div.container > a{
     padding: 1rem 1rem;
 }
+.call{
+    align-items: center;
+    background-color: #56b599;
+    width:60%;
+    border-radius: 1rem;
+}
 
+.button_container{
+    display: flex;
+    width:40%;
+    justify-content: center;
+}
+
+.text_container{
+    width:60%;
+}
 
 .sq_radius{
     width:21%;
@@ -48,26 +93,40 @@ div.container > a{
     aspect-ratio: 1/1;
     border-radius:2rem;
     object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.sq_radius:hover{
+    transform: scale(1.1);
 }
 
 #rad1 {
     width:auto;
     gap:1rem;
     justify-content: space-evenly;
+    padding-bottom:4rem;
+
 }
+
+
 
 #header{
     display:block;
     position: relative;
+    height:100px;
 }
 
-#header >h1 {
+#header > h1 {
     position: absolute;
     left: 50%;
     top:50%;
     transform: translate(-50%,-50%);
     margin:0;
     white-space: nowrap;
+    font-size: 36px;
+    font-weight: 900;
+    margin-top:0.75rem;
+    margin-bottom: 0.75rem;
 }
 
 footer {
@@ -76,3 +135,54 @@ footer {
     
 }
 
+#c4{
+    justify-content: center;
+}
+
+
+h1.small
+{
+    margin: 0;
+}
+
+p.encourage
+{
+    margin:0.5rem 0;
+}
+
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#1c6e70,#72f3d3);
+  border: 0;
+  border-radius: 12px;
+  box-shadow: rgba(236, 235, 237, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select:none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 1;
+  background-image: linear-gradient(160deg,#1c6e70,#72f3d3);
+  box-shadow: rgba(255, 255, 255, 0.467) 22px 35px 50px -6px;
+}
+
+@media (min-width: 768px) {
+    .button-64 {
+      font-size: 24px;
+      min-width: 196px;
+    }
+  }
